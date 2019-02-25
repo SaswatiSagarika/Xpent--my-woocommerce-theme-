@@ -29,17 +29,19 @@ ul.sub-menu {
 li.menu-item-has-children:hover ul.sub-menu {
 	display: block;
 }
+
 .star-rating {
 	overflow: hidden;
 	position: relative;
 	height: 1em;
 	line-height: 1;
-	font-size: 1em;
+    font-size: 1em;
 	width: 5.4em;
 	font-family: star;
 	float:right;
 	padding:2px 0;
 }
+
 .star-rating::before {
 	content: '\73\73\73\73\73';
 	float: left;
@@ -48,6 +50,7 @@ li.menu-item-has-children:hover ul.sub-menu {
 	position: absolute;
 	color: #bbb;
 }
+
 .star-rating span {
 	overflow:hidden;
 	float: left;
@@ -56,6 +59,7 @@ li.menu-item-has-children:hover ul.sub-menu {
 	position: absolute;
 	padding-top: 1.5em;
 }
+
 .star-rating span::before {
 	content: '\53\53\53\53\53';
 	top: 0;
@@ -63,9 +67,7 @@ li.menu-item-has-children:hover ul.sub-menu {
 	position: absolute;
 	color: #ffc600;
 }
-ul.page-numbers {
 
-}
 ul.page-numbers {
     list-style-type: none;
     margin: 0;
@@ -96,6 +98,7 @@ span.page-numbers.current {
     line-height: 1em;
     margin: 2px;
 }
+
 div.sale-label {
     background: #EA232A;
     color: #fff;
@@ -111,13 +114,16 @@ div.sale-label {
     margin: 140px;
     margin-left: 64px;
 }
+
 .woocommerce-product-rating {
     margin-bottom: 1.618em;
 }
+
 .single-product {
     float: left;
     margin: 6px;
 }
+
 button.bc-uatc-button.single_add_to_cart_button.button.alt {
     background: #092b41;
     color: #bebebe;
