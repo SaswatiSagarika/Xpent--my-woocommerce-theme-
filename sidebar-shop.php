@@ -14,7 +14,7 @@
 ?>
 <div class="col-md-3 col-sm-4 mb-xs-30">
 
-    <?php if ( ! dynamic_sidebar( 'main-sidebar' ) ) : ?>
+    <?php if ( ! dynamic_sidebar( 'product-sidebar' ) ) : ?>
     <?php do_action( 'before_sidebar' ); ?>
     
         <div class="sidebar-block">

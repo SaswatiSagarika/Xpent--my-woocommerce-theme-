@@ -54,10 +54,10 @@ get_header( 'shop' ); ?>
 		
 		$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
         if($userId):
-            $zipcode = get_user_meta($userId, 'zip_code', true);
+            $zipcode = get_user_meta($userId, 'zip_code', true );
             $args = array(
             	'meta-query' => array(
-			        array('key' => 'zip_code', 'value' => $zipcode),
+			        array( 'key' => 'zip_code', 'value' => $zipcode ),
 			    ),
                 'post_type'   => 'product',
                 'post_status' => 'publish',

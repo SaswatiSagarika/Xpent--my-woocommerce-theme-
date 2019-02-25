@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php endforeach; ?>
 	</select>
 	<input type="hidden" name="paged" value="1" />
-	<?php $data = wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); 
-		var_dump($data);
+	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); 
+		
 	?>
 </form>

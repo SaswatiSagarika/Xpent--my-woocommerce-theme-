@@ -54,7 +54,7 @@ function xpent_wpadmin_redirect_custom_login() {
  */
 function xpent_remove_admin_bar() {
 	if ( is_user_logged_in() && !current_user_can('administrator') && !is_admin()) {
-	  show_admin_bar(false);
+	  show_admin_bar( false );
 	}
 }
 
