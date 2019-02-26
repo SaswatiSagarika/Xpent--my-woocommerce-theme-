@@ -18,7 +18,11 @@ function xpent_add_login_check()
 {
     if ( is_user_logged_in() && ( is_page( 429 ) || is_page( 438 ) ) ) {
         wp_redirect( site_url().'/shop/' );
-        
+    }
+
+    if( !is_user_logged_in() && is_page(  258 ) ) {
+
+    	wp_redirect( esc_url( add_query_arg( 'variable_to_send', '1', site_url().'/user-login/' ) ) );
     }
 }
 

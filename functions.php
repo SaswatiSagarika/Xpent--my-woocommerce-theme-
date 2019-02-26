@@ -46,7 +46,7 @@ add_action( 'woocommerce_after_single_product_summary', 'xpent_wc_output_product
 
 //actions for auth-setup
 add_action( 'wp-logout', 'xpent_redirect_custom_login' );
-add_action( 'init', 'xpent_wpadmin_redirect_custom_login' );
+// add_action( 'init', 'xpent_wpadmin_redirect_custom_login' );
 add_action( 'wp', 'xpent_add_login_check' );
 
 

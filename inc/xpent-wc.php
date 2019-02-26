@@ -58,8 +58,8 @@ function xpent_wc_loop_product_thumbnail() {
 				<div class="item-overlay">
 					<ul>
 						<li><?php woocommerce_template_loop_add_to_cart(); ?></li>
-						<li><?php CWL::render_button_wishlist(); ?></li>
-						<li><a href="#" title="Compare"><i class="fa fa-random"></i></a></li>
+						<li><?php echo do_shortcode( '[yith_wcwl_add_to_wishlist]' ); ?><i class="fa fa-heart wishlist"></i></li>
+						<li><?php echo do_shortcode( '[yith_compare_button]' ); ?><i class="fa fa-random compare"></i></li>
 					</ul>
 				</div>
 			</div>

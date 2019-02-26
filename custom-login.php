@@ -86,6 +86,15 @@ if ( !$user_ID ) {
 						                     	<h2 class="heading">Customer Login</h2>
 						                    </div>
 						                </div>
+						                <?php if ( $_GET['variable_to_send'] ) : ?>
+	                                        <div class="col-xs-12 mb-20">
+	                                            
+                                                <div class="alert alert-danger">
+                                                	Hey! you have to login before you checkout
+                                                </div>
+		                                            
+	                                        </div>
+	                                    <?php endif; ?>
 						                <?php if ( count( $error ) > 0 ) : ?>
 	                                        <div class="col-xs-12 mb-20">
 	                                            <ul>
